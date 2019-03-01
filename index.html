@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <link rel="stylesheet" href="./swiper/css/swiper.css">
+    <link rel="stylesheet" href="./less/index.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="content">
+           <select name="one" id="">
+            <option value="上海">上海</option>
+            <option value="">深圳</option>
+           </select>
+
+           <h2>驴妈妈旅游网</h2>
+           <img src="./images/icon/my.png" alt="">
+        </div>
+    </header>
+  <!-- 轮播图   -->
+   <section id="lunbo">
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/img/banner1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/img/banner2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/img/banner3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/img/banner4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                    <img src="./images/img/banner5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                        <img src="./images/img/banner6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                            <img src="./images/img/banner7.jpg" alt="">
+                        </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </section>
+   </section>
+   <!-- 旅游项目 -->
+    <section id="lvyou">
+      <div class="top">
+            <img src="./images/icon/nav1.png" alt="">
+            <img src="./images/icon/nav2.png" alt="">
+            <img src="./images/icon/nav3.png" alt="">
+      </div>
+      <div class="bottom">
+            <img src="./images/icon/nav4.png" alt="">
+            <img src="./images/icon/nav5.png" alt="">
+            <img src="./images/icon/nav6.png" alt="">
+      </div>
+     
+    </section>
+
+     <!-- 交通工具 -->
+     <section id="jiaotong">
+        
+         <img src="./images/icon/j1.png" alt="">
+         <img src="./images/icon/j2.png" alt="">
+         <img src="./images/icon/j3.png" alt="">
+         <img src="./images/icon/j4.png" alt="">
+         <img src="./images/icon/j5.png" alt="">
+         <img src="./images/icon/j6.png" alt="">
+         <img src="./images/icon/j7.png" alt="">
+         <img src="./images/icon/j8.png" alt="">
+     </section>
+
+     <!-- 亲子旅游 -->
+     <section id="qinzi">
+         <img src="./images/img/t1.jpg" class="left" alt="">
+        <div class="right">
+                <img src="./images/img/t2.jpg" class="top" alt="">
+                <img src="./images/img/t3.jpg" class="bottom" alt="">
+        </div>
+     </section>
+
+     <!-- 热门活动 -->
+     <section id="remen">
+        <img src="./images/img/r1.jpg" alt="">
+        <img src="./images/img/r2.jpg" alt="">
+        <img src="./images/img/r3.jpg" alt="">
+        <img src="./images/img/r4.jpg" alt="">
+      
+     </section>
+
+     <section id="yinyue">
+        <div class="top">
+            <span>度周末</span>
+            <span>度长假</span>
+        </div>
+        <img src="./images/img/zm1.jpg" alt="">
+        
+        <img src="./images/img/zm2.jpg" alt="">
+        <img src="./images/img/zm3.jpg" alt="">
+        <img src="./images/img/zm4.jpg" alt="">
+        <img src="./images/img/zm5.jpg" alt="">
+     </section>
+
+    <footer id="footer">
+        <div class="left">
+                <a href="#">免费注册</a>
+                <a href="#">登录</a>
+        </div>
+                 
+        <a href="#">TOP</a>
+      
+    </footer>
+
+    <script src="./swiper/js/swiper.js"></script>
+
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // direction 轮播方向
+        // direction: 'vertical', // 垂直切换选项
+        direction: 'horizontal', // 水平切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器 小圆点
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+</body>
+</html>
+
